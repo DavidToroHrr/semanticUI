@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Semantic UI Demo</title>
+
+  <!-- Semantic UI -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="ui inverted fixed menu">
+    <div class="ui container">
+
+      <a class="header item">
+        Semantic UI
+      </a>
+
+      <a class="item" href="#inicio">Inicio</a>
+      <a class="item" href="#productos">Productos</a>
+      <a class="item" href="#contacto">Contacto</a>
+
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-section">
+
+    <div class="ui text container center aligned">
+
+      <h1 class="ui inverted header huge fade-in">
+        Bienvenido a Semantic UI
+      </h1>
+
+      <p class="subtitle fade-in">
+        Framework CSS moderno y fácil de usar
+      </p>
+
+      <button class="ui huge blue button" id="infoBtn">
+        Ver información
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="section-spacing">
+
+    <div class="ui container">
+
+      <h2 class="ui center aligned header">
+        Productos
+      </h2>
+
+      <div class="ui stackable three column grid">
+
+        <!-- CARD 1 -->
+        <div class="column">
+          <div class="ui fluid card hover-card">
+
+            <div class="content">
+              <div class="header">Laptop</div>
+
+              <div class="description">
+                Equipo de alto rendimiento.
+              </div>
+            </div>
+
+            <div class="extra content">
+              <button class="ui blue button fluid comprar-btn">
+                Comprar
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="column">
+          <div class="ui fluid card hover-card">
+
+            <div class="content">
+              <div class="header">Mouse Gamer</div>
+
+              <div class="description">
+                Precisión y velocidad.
+              </div>
+            </div>
+
+            <div class="extra content">
+              <button class="ui green button fluid comprar-btn">
+                Comprar
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="column">
+          <div class="ui fluid card hover-card">
+
+            <div class="content">
+              <div class="header">Teclado Mecánico</div>
+
+              <div class="description">
+                Diseño moderno y ergonómico.
+              </div>
+            </div>
+
+            <div class="extra content">
+              <button class="ui red button fluid comprar-btn">
+                Comprar
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section-spacing">
+
+    <div class="ui container">
+
+      <h2 class="ui dividing header">
+        Contáctanos
+      </h2>
+
+      <form class="ui form" id="contactForm">
+
+        <div class="field">
+          <label>Nombre</label>
+          <input type="text" placeholder="Ingrese su nombre" required>
+        </div>
+
+        <div class="field">
+          <label>Correo</label>
+          <input type="email" placeholder="Ingrese su correo" required>
+        </div>
+
+        <div class="field">
+          <label>Mensaje</label>
+          <textarea required></textarea>
+        </div>
+
+        <button class="ui primary button" type="submit">
+          Enviar
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- MODAL -->
+  <div class="ui modal">
+
+    <div class="header">
+      Información de Semantic UI
+    </div>
+
+    <div class="content">
+      <p>
+        Semantic UI permite crear interfaces modernas usando clases fáciles de entender.
+      </p>
+    </div>
+
+    <div class="actions">
+      <button class="ui approve button">
+        Entendido
+      </button>
+    </div>
+
+  </div>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Semantic UI JS -->
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+  <!-- JS propio -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
